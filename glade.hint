@@ -1,0 +1,7 @@
+category: Gnome Devel
+requires: libcairo2 libglib2.0_0 libgdk_pixbuf2.0_0 libgtk3_0 libintl8 libpango1.0_0 libxml2 girepository-Gtk3.0
+sdesc: "GTK+-3.0 GUI designer"
+ldesc: "Glade is a RAD tool to enable quick & easy development of user 
+interfaces for the GTK+ toolkit and the GNOME desktop environment. The 
+user interfaces designed in Glade are stored in XML format, enabling 
+easy integration with external tools."
