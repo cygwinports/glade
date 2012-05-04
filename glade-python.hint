@@ -1,5 +1,5 @@
 category: Gnome Devel
-requires: glade libglib2.0_0 python python-gobject
+requires: glade libglib2.0_0 python python-gobject girepository-Gtk3.0
 external-source: glade
 sdesc: "GTK+-3.0 GUI designer (PyGObject custom widget loader)"
 ldesc: "Glade is a RAD tool to enable quick & easy development of user 

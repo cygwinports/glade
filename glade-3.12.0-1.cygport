@@ -17,3 +17,5 @@ glade_devel_CONTENTS='usr/include/ usr/lib/lib* usr/lib/pkgconfig/ usr/share/gtk
 glade_python_CONTENTS="usr/lib/glade/modules/*gladepython*"
 
 DISTCLEANFILES="doc/html/*"
+
+KEEP_LA_FILES="none"
