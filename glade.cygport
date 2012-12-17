@@ -1,9 +1,15 @@
 inherit gnome2
 
-DESCRIPTION="GNOME 3 GUI builder"
+NAME="glade"
+VERSION=3.14.2
+RELEASE=1
+CATEGORY="GNOME Devel"
+SUMMARY="GTK+-3.0 GUI designer"
+DESCRIPTION="Glade is a RAD tool to enable quick & easy development of user
+interfaces for the GTK+ toolkit and the GNOME desktop environment. The user
+interfaces designed in Glade are stored in XML format, enabling easy
+integration with external tools."
 HOMEPAGE="http://glade.gnome.org/"
-
-PATCH_URI="3.10.0-gmodule-patch.patch"
 
 DEPEND="gnome-common gnome-doc-utils gtk-doc
 	pkgconfig(gtk+-3.0)
@@ -14,8 +20,7 @@ PKG_NAMES="${PN} ${PN}-devel ${PN}-python"
 glade_CONTENTS="--exclude=gtk-doc etc/ usr/bin/ usr/lib/gir*
                 usr/lib/glade/modules/*gladegtk* usr/share/"
 glade_devel_CONTENTS='usr/include/ usr/lib/lib* usr/lib/pkgconfig/ usr/share/gtk-doc/'
+glade_python_REQUIRES="python-gi girepository-Gtk3.0"
 glade_python_CONTENTS="usr/lib/glade/modules/*gladepython*"
 
 DISTCLEANFILES="doc/html/*"
-
-KEEP_LA_FILES="none"
