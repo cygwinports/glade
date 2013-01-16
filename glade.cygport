@@ -2,7 +2,7 @@ inherit gnome2
 
 NAME="glade"
 VERSION=3.14.2
-RELEASE=1
+RELEASE=2
 CATEGORY="GNOME Devel"
 SUMMARY="GTK+-3.0 GUI designer"
 DESCRIPTION="Glade is a RAD tool to enable quick & easy development of user
