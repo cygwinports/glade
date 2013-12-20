@@ -1,9 +1,9 @@
 inherit gnome2
 
 NAME="glade"
-VERSION=3.14.2
-RELEASE=2
-CATEGORY="GNOME Devel"
+VERSION=3.14.3
+RELEASE=1
+CATEGORY="Devel"
 SUMMARY="GTK+-3.0 GUI designer"
 DESCRIPTION="Glade is a RAD tool to enable quick & easy development of user
 interfaces for the GTK+ toolkit and the GNOME desktop environment. The user
@@ -16,7 +16,7 @@ DEPEND="gnome-common gnome-doc-utils gtk-doc
 	pkgconfig(libxml-2.0)
 	python(gobject)"
 
-PKG_NAMES="${PN} ${PN}-devel ${PN}-python"
+PKG_NAMES="${NAME} ${NAME}-devel ${NAME}-python"
 glade_CONTENTS="--exclude=gtk-doc etc/ usr/bin/ usr/lib/gir*
                 usr/lib/glade/modules/*gladegtk* usr/share/"
 glade_devel_CONTENTS='usr/include/ usr/lib/lib* usr/lib/pkgconfig/ usr/share/gtk-doc/'
