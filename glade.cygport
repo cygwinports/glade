@@ -1,7 +1,7 @@
 inherit gnome2
 
 NAME="glade"
-VERSION=3.14.3
+VERSION=3.16.1
 RELEASE=1
 CATEGORY="Devel"
 SUMMARY="GTK+-3.0 GUI designer"
@@ -16,10 +16,12 @@ DEPEND="gnome-common gnome-doc-utils gtk-doc
 	pkgconfig(libxml-2.0)
 	python(gobject)"
 
-PKG_NAMES="${NAME} ${NAME}-devel ${NAME}-python"
+PKG_NAMES="${NAME} ${NAME}-devel ${NAME}-doc ${NAME}-python"
 glade_CONTENTS="--exclude=gtk-doc etc/ usr/bin/ usr/lib/gir*
                 usr/lib/glade/modules/*gladegtk* usr/share/"
-glade_devel_CONTENTS='usr/include/ usr/lib/lib* usr/lib/pkgconfig/ usr/share/gtk-doc/'
+glade_devel_CONTENTS="usr/include/ usr/lib/lib* usr/lib/pkgconfig/"
+glade_doc_CATEGORY="Doc"
+glade_doc_CONTENTS="usr/share/gtk-doc/"
 glade_python_REQUIRES="python-gi girepository-Gtk3.0"
 glade_python_CONTENTS="usr/lib/glade/modules/*gladepython*"
 
