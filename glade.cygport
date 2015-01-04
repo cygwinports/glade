@@ -1,7 +1,7 @@
 inherit gnome2
 
 NAME="glade"
-VERSION=3.16.1
+VERSION=3.18.3
 RELEASE=1
 CATEGORY="Devel"
 SUMMARY="GTK+-3.0 GUI designer"
