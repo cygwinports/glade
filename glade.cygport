@@ -1,7 +1,7 @@
 inherit gnome2 python3
 
 NAME="glade"
-VERSION=3.20.2
+VERSION=3.20.3
 RELEASE=1
 CATEGORY="Devel"
 SUMMARY="GTK+-3.0 GUI designer"
